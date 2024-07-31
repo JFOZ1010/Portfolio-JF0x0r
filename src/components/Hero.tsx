@@ -76,7 +76,7 @@ export function Hero() {
         </h1>
         <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
           Software developer/Information Security Enthusiast from Colombia, focused on web pentesting, Backend
-          Django development, and AI/ML. with a passion for what&apos;s new and a commitment to 
+          Django development. with a passion for what&apos;s new and a commitment to 
                     be better every day, to make the digital world safer and safer.
         </p>
 
