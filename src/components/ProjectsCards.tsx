@@ -38,10 +38,10 @@ export const projects = [
     link: "https://github.com/JFOZ1010/GPU-HunterBot",
   },
   {
-    title: "AES-Sauron",
+    title: "CVEHunter",
     description:
-      "Hacking tool created to be able to encrypt and decrypt ciphertext using the AES-128 bit algorithm.",
-    link: "https://github.com/JFOZ1010/AES-Sauron",
+      "A hacking tool designed to collect all NVD CVEs from 2018 onwards, storing them for integration with OWASP ZAP for web application analysis.",
+    link: "https://github.com/JFOZ1010/CVEHunter",
   },
   {
     title: "CryptoHack",
