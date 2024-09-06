@@ -5,6 +5,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Blog from "@/components/ui/blog"; 
 const portS = '/progressPortSwigger.png';
 const pentesterL = '/pentesterlab.png';
+const hackerOne = '/1stReportHackerOne.png'
 
 
 
@@ -24,6 +25,17 @@ export function ExperienceInfo() {
             <div className="text-2-1 prose prose-sm dark:prose-invert">
               {item.description}
             </div>
+
+            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
+              {item.subtitleH}
+            </h2>
+            {item.image3 && (
+              <img
+                src={hackerOne}
+                alt={item.title}
+                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
+              />
+            )}
 
             <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
               {item.subtitle1}
@@ -92,13 +104,26 @@ const dummyContent = [
     image: "",
   },
   {
+    title: "Reports in Hacker0ne",
+    description: (
+      <ul className="list-disc ml-6">
+        <li>
+        I was able to successfully report a disclosure vulnerability in Hackerone for the Adobe Security Response program. 
+        </li>
+      </ul>
+    ),
+    subtitleH: "Adobe",
+    image3: "/1stReportHackerOne",
+    //image2: "",
+  },
+  {
     title: "Platforms Web Academy",
     description: (
       <ul className="list-disc ml-6">
         <li>
-          I have been able to solve over 218 labs on the Portswigger and Pentesterlab platform covering topics such as:
-          SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, SSTI, OS Command Injection, Path Traversal, File Upload, File Include,
-          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS (In Progress).
+          I have been able to solve over 254 labs on the Portswigger and Pentesterlab platform covering topics such as:
+          SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, Server Side Template Injection, OS Command Injection, Path Traversal, File Upload, File Include,
+          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS, Business Logic Vulnerabilities, Caché Web Deception (In Progress).
 
         </li>
       </ul>
