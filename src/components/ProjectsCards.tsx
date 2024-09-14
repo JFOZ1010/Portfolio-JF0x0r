@@ -32,10 +32,10 @@ export function ProjectsCards() {
 }
 export const projects = [
   {
-    title: "GPU-Hunter",
+    title: "TorIPGuard",
     description:
-      "GPU Hunter is a bot built in Python Selenium that allows to automate the whole process of finding the graphics card at the best price, alerting via emai in a nice hypertext message.",
-    link: "https://github.com/JFOZ1010/GPU-HunterBot",
+      "A REST API for managing malicious IPs in TOR networks, featuring IP retrieval, exclusion, filtering, and detailed logging with user and admin permissions.",
+    link: "https://github.com/JFOZ1010/TorIPGuard",
   },
   {
     title: "CVEHunter",
@@ -50,9 +50,9 @@ export const projects = [
     link: "https://github.com/JFOZ1010/CryptoHack",
   },
   {
-    title: "DjangoAuth APP",
+    title: "GPU-Hunter",
     description:
-      "Application built with Django Python, creating a whole CRUD system, with login and signup authentication.",
-    link: "https://github.com/JFOZ1010/DjangoAuth-CRUD",
+      "GPU Hunter is a bot built in Python Selenium that allows to automate the whole process of finding the graphics card at the best price, alerting via emai in a nice hypertext message.",
+    link: "https://github.com/JFOZ1010/GPU-HunterBot",
   },
 ];
