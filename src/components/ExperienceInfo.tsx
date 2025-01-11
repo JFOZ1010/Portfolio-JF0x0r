@@ -121,9 +121,9 @@ const dummyContent = [
     description: (
       <ul className="list-disc ml-6">
         <li>
-          I have been able to solve over 260 labs on the Portswigger and Pentesterlab platform covering topics such as:
-          SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, Server Side Template Injection, OS Command Injection, Path Traversal, File Upload, File Include,
-          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS, Business Logic Vulnerabilities, Caché Web Deception (In Progress).
+          I have been able to solve over 278 labs on the Portswigger and Pentesterlab platform covering topics such as:
+          SSRF, SQLi, Disclosure Information, LLM Attacks, ClickJacking, SSTI, OS Command Injection, Path Traversal, File Upload, File Include,
+          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS, Business Logic Vulnerabilities, Cache Web Deception, Deserialization Insecure.
 
         </li>
       </ul>
