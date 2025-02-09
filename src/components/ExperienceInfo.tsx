@@ -3,7 +3,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import Blog from "@/components/ui/blog"; 
-const portS = '/progressPortSwigger2025.png';
+const portS = '/progressPortSwigger.png';
 const pentesterL = '/pentesterlab.png';
 const hackerOne = '/1stReportHackerOne.png'
 
