@@ -38,10 +38,10 @@ export const projects = [
     link: "https://github.com/JFOZ1010/TorIPGuard",
   },
   {
-    title: "CVEHunter",
+    title: "H1Notifier",
     description:
-      "A hacking tool designed to collect all NVD CVEs from 2018 onwards, storing them for integration with OWASP ZAP for web application analysis.",
-    link: "https://github.com/JFOZ1010/CVEHunter",
+      "Automated bot that monitors new programs launched on HackerOne and sends Telegram notifications whenever a new program is detected. Fully automated via GitHub Actions, runs every 3 hours.",
+    link: "https://github.com/JFOZ1010/H1Notifier",
   },
   {
     title: "CryptoHack",

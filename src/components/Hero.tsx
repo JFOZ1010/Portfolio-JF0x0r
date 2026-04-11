@@ -19,17 +19,13 @@ export function Hero() {
     link.click();
   };
 
-  // There is a bug -> not printing the index[1] char
-  // Because of this added the indedx[1] char twice
-  // Todo: Fix later
   const greetings = [
-    "Heello ",
-    "Hoola ",
-    "こんんにちは ",
-    "안녕녕하세요 ",
-    "Прривет ",
+    "Hello ",
+    "Hola ",
+    "こんにちは ",
+    "안녕하세요 ",
+    "Привет ",
   ];
-  greetings.pop();
 
   //console.log("greetings: ", greetings)
   const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
@@ -48,15 +44,13 @@ export function Hero() {
   useEffect(() => {
     const greeting = greetings[currentGreetingIndex];
     let index = 0;
-
-    setTypedGreeting(greeting.charAt(0));
+    setTypedGreeting("");
 
     const typingInterval = setInterval(() => {
-      if (index === greeting.length - 1) {
+      index++;
+      setTypedGreeting(greeting.slice(0, index));
+      if (index >= greeting.length) {
         clearInterval(typingInterval);
-      } else {
-        setTypedGreeting((prevTyped) => prevTyped + greeting.charAt(index + 1));
-        index++;
       }
     }, 250);
 
@@ -65,7 +59,7 @@ export function Hero() {
 
   return (
     <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-      
+
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="green"
@@ -75,9 +69,7 @@ export function Hero() {
           {typedGreeting} <br /> I&apos;m Juan Felipe Oz.
         </h1>
         <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
-          Software developer/Information Security Enthusiast from Colombia, focused on web pentesting, Backend
-          Django development. with a passion for what&apos;s new and a commitment to 
-                    be better every day, to make the digital world safer and safer.
+          Software developer and security researcher from Colombia. Focused on web application penetration testing, vulnerability research, and backend development. CVE author and NASA-acknowledged independent researcher. Committed to building and breaking things the right way.
         </p>
 
         <div className="flex justify-center mt-4">
@@ -89,6 +81,7 @@ export function Hero() {
               <a
                 href="https://drive.google.com/file/d/1UOF6wkptUmfdHY8IIE1sNhBLKANr_8x-/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>See Resume</span>
               </a>

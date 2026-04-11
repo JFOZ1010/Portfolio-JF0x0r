@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import Blog from "@/components/ui/blog"; 
-const progresoP = '/progress-portswigger.png';
-const pentesterL = '/pentesterlab.png';
-const hackerOne = '/1stReportHackerOne.png'
-const bugcrowd = '/reportNasa.png'
+import { MediumPosts } from "./MediumPosts";
 
-
-
+const lorNasa1 = '/LOR-Nasa-1.png';
+const lorNasa2 = '/LOR-Nasa-2.jpg';
+const ewptxv3 = '/ewptxv3-badge.png';
+const bscp = '/bscp-badge.png';
+const hackerOne = '/1stReportHackerOne.png';
 
 export function ExperienceInfo() {
   return (
@@ -17,62 +17,17 @@ export function ExperienceInfo() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-5xl font-bold w-fit  py-2 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               {item.badge}
             </h2>
-
-            <p className={twMerge("text-xl mb-4 px-6 font-bold")}>{item.title}</p>
-
+            {item.title && <p className={twMerge("text-xl mb-4 px-0 font-bold")}>{item.title}</p>}
             <div className="text-2-1 prose prose-sm dark:prose-invert">
               {item.description}
             </div>
-
-            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
-              {item.subtitleH}
-            </h2>
-            {item.image3 && (
-              <img
-                src={hackerOne}
-                alt={item.title}
-                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
-              />
-            )}
-            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
-              {item.subtitleB}
-            </h2>
-            {item.image5 && (
-              <img
-                src={bugcrowd}
-                alt={item.title}
-                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
-              />
-            )}
-            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
-              {item.subtitleP}
-            </h2>
-            {item.image4 && (
-              <img
-                src={progresoP}
-                alt={item.title}
-                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
-              />
-            )}
-            <h2 className="bg-black text-white rounded-full text-4xl font-bold w-fit py-2 mb-4 mx-auto text-center">
-              {item.subtitle2}
-            </h2>
-            {item.image2 && (
-              <img
-                src={pentesterL}
-                alt={item.title}
-                className="w-full h-auto rounded-lg outline outline-offset-4 outline-2 outline-green-100 hover:scale-110  my-6 transition ease-in-out duration-300 m-auto"
-              />
-            )}
           </div>
         ))}
-        <Blog/>
       </div>
     </TracingBeam>
-
   );
 }
 
@@ -82,118 +37,194 @@ const dummyContent = [
     description: (
       <>
         <div className="mb-4">
-          <h3 className="font-bold">Security Researcher - HackerOne/BugCrowd</h3>
+          <h3 className="font-bold">Ethical Hacker, KPMG Colombia</h3>
+          <p className="text-sm text-neutral-400 mb-2">April 2025 – Present</p>
           <ul className="list-disc ml-6">
             <li>
-              Specialized in identifying critical vulnerabilities in systems and applications 
-              using the PTES methodology and lateral thinking to solve complex problems with technical creativity.
+              Web and mobile application penetration testing for enterprise clients across
+              financial, healthcare, and government sectors, including major energy corporations.
             </li>
             <li>
-              Identified and mitigated vulnerabilities, reducing attack surfaces by 60% and improving system resilience by 40%.
+              Manual and automated vulnerability assessment: SQLi, XSS, IDOR, SSRF,
+              Business Logic flaws, authentication bypasses, and API security testing.
             </li>
             <li>
-              Reported <strong>Open Redirect</strong>, <strong>Subdomain Takeover</strong>, and <strong>Info Disclosure</strong>,
-              in <a href="https://hackerone.com/jf0x0r?type=user" target="_blank" className="text-blue-500 underline">Adobe</a>, <a href="https://bugcrowd.com/jf0x0r" target="_blank" className="text-blue-500 underline">NASA VDP</a>, 
-              and private programs. Strengthened security for major organizations through detailed 
-              vulnerability reports. Specialized in asset enumeration and web exploitation for high-impact findings.
+              Exploitation of complex vulnerability chains in regulated environments
+              under OWASP and PTES methodologies.
+            </li>
+            <li>
+              Client-facing reporting: translating critical technical findings into
+              executive-level risk impact, with actionable remediation roadmaps.
+            </li>
+            <li>
+              Attack surface analysis and red team collaboration on complex
+              multi-layered infrastructures.
             </li>
           </ul>
         </div>
-        
-        <div>
-          <h3 className="font-bold">Analyst Software/Ethical Hacker Internship - Siesa</h3>
+
+        <div className="mb-4">
+          <h3 className="font-bold">Security Researcher - HackerOne / BugCrowd</h3>
+          <p className="text-sm text-neutral-400 mb-2">July 2024 – Present</p>
           <ul className="list-disc ml-6">
             <li>
-              Conducted comprehensive analysis of enterprise software solutions, including ERP and CRM systems.
-              Tested functionality across various versions before production deployment.
+              Specialized in identifying critical vulnerabilities using PTES methodology
+              and lateral thinking to solve complex problems with technical creativity.
             </li>
             <li>
-              Performed pentesting on two applications, uncovering security vulnerabilities.
-              Proposed improvements to mitigate <strong>SQL Boolean Injection</strong> and <strong>XSS Reflected</strong> attacks.
+              Reported Open Redirect, Subdomain Takeover, and Information Disclosure
+              vulnerabilities in Adobe, NASA VDP, and private programs.
             </li>
             <li>
-              Contributed to software security analysis and optimization efforts, enhancing operational efficiency and data protection.
+              Specialized in asset enumeration, web exploitation, and high-impact findings
+              across public and private bug bounty programs.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-bold">Software Analyst / Ethical Hacker Intern - Siesa</h3>
+          <p className="text-sm text-neutral-400 mb-2">January 2024 – June 2024</p>
+          <ul className="list-disc ml-6">
+            <li>
+              Analyzed enterprise ERP and CRM software solutions across multiple versions
+              prior to production deployment.
+            </li>
+            <li>
+              Conducted penetration testing on two internal applications, identifying
+              SQL Boolean Injection and Reflected XSS vulnerabilities with remediation proposals.
+            </li>
+            <li>
+              Contributed to software quality and security analysis, improving operational
+              efficiency and data protection standards.
             </li>
           </ul>
         </div>
       </>
     ),
-    badge: "💻 Experience",
-    image: "",
+    badge: "Experience",
   },
   {
-    title: "DiceCTF 2024 Quals",
+    title: "",
     description: (
-      <ul className="list-disc ml-6">
-        <li>
-          Successfully participate in DiceCTF 2024 Quals, a prestigious 48-hour
-          online Capture The Flag, in the ESPower_ team.
-        </li>
-      </ul>
+      <div className="flex overflow-x-auto flex-nowrap gap-4 pb-4 snap-x">
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-35526</h3>
+          <p className="mb-2 text-sm text-neutral-300">Denial of Service via unbounded WebSocket subscriptions in Strawberry GraphQL (&#x3e;5M downloads/month on PyPI). An unauthenticated attacker can exhaust server resources by opening unlimited subscriptions without triggering any rate limit.</p>
+          <a href="https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34406</h3>
+          <p className="mb-2 text-sm text-neutral-300">Privilege Escalation via mass assignment of is_superuser in APTRS&apos;s user edit endpoint. A low-privileged authenticated user can escalate to superuser by sending a crafted request that modifies protected fields.</p>
+          <a href="https://github.com/APTRS/APTRS/security/advisories/GHSA-gv25-wp4h-9c35" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34381</h3>
+          <p className="mb-2 text-sm text-neutral-300">Unauthenticated access to role-restricted documents in Admidio via a neutralized .htaccess file. File access controls were bypassable without any authentication.</p>
+          <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-7fh7-8xqm-3g88" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34382</h3>
+          <p className="mb-2 text-sm text-neutral-300">Missing CSRF protection on custom list deletion in Admidio&apos;s mylist_function.php. Allows an attacker to trick authenticated users into deleting arbitrary lists via a forged request.</p>
+          <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-g3mx-8jm6-rc85" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50578</h3>
+          <p className="mb-2 text-sm text-neutral-300">Host Header Injection + Open Redirect in the official Heimdall Docker image (LinuxServer.io). Manipulation of the Host header allows arbitrary redirection of authenticated users.</p>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2025-50578" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50579</h3>
+          <p className="mb-2 text-sm text-neutral-300">Authentication bypass vulnerability in Nginx Proxy Manager v2.12.3. Reported via MITRE/NVD.</p>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2025-50579" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+        </div>
+
+        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/40 flex flex-col items-center justify-center snap-start min-h-[160px]">
+          <span className="text-3xl text-green-400 animate-pulse mb-3 mt-2">∞</span>
+          <p className="text-neutral-400 text-sm text-center">More research in progress.</p>
+          <p className="text-neutral-600 text-xs mt-1 text-center">Some findings are under coordinated disclosure.</p>
+        </div>
+      </div>
     ),
-    badge: "🏅 Achievements",
-    image: "",
+    badge: "CVEs / Vulnerability Research",
   },
   {
-    title: "Reports in Hacker0ne",
+    title: "",
     description: (
-      <ul className="list-disc ml-6">
-        <li>
-        I was able to successfully report a disclosure vulnerability in Hackerone for the Adobe Security Response program. 
-        </li>
-      </ul>
+      <div className="flex flex-col gap-12">
+        <div>
+          <div className="flex items-center gap-3 mb-1">
+            <a href="https://bugcrowd.com/jf0x0r" target="_blank" rel="noopener noreferrer">
+              <Image src="/bugcrowd-logo.png" alt="BugCrowd Logo" width={160} height={44} className="object-contain hover:scale-105 transition-transform duration-300" loading="lazy" />
+            </a>
+          </div>
+          <p className="mb-6">Vulnerabilities reported and acknowledged in NASA&apos;s Vulnerability Disclosure Program.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <a href={lorNasa1} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                <Image src={lorNasa1} alt="NASA Letter of Appreciation 1" width={600} height={800} className="w-full h-auto rounded-lg outline outline-offset-2 outline-1 outline-neutral-700 hover:outline-green-500 hover:scale-105 transition ease-in-out duration-300" loading="lazy" />
+              </a>
+              <p className="text-xs text-center text-neutral-400 mt-3 font-medium">Letter of Appreciation - NASA VDP · May 15, 2025</p>
+            </div>
+            <div>
+              <a href={lorNasa2} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                <Image src={lorNasa2} alt="NASA Letter of Appreciation 2" width={600} height={800} className="w-full h-auto rounded-lg outline outline-offset-2 outline-1 outline-neutral-700 hover:outline-green-500 hover:scale-105 transition ease-in-out duration-300" loading="lazy" />
+              </a>
+              <p className="text-xs text-center text-neutral-400 mt-3 font-medium">Letter of Appreciation - NASA VDP · May 29, 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-px bg-neutral-800"></div>
+
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <a href="https://hackerone.com/jf0x0r" target="_blank" rel="noopener noreferrer">
+              <Image src="/hackerone-logo.png" alt="HackerOne Logo" width={160} height={44} className="object-contain hover:scale-105 transition-transform duration-300" style={{ filter: 'invert(1)' }} loading="lazy" />
+            </a>
+          </div>
+          <p className="mb-6">Adobe Security: Information disclosure of git metadata and Springboot actuator data, responsibly reported and resolved.</p>
+          <div className="max-w-xl mx-auto">
+            <a href={hackerOne} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+              <Image src={hackerOne} alt="HackerOne Report" width={700} height={450} className="w-full h-auto rounded-lg outline outline-offset-2 outline-1 outline-neutral-700 hover:outline-green-500 hover:scale-105 transition ease-in-out duration-300" loading="lazy" />
+            </a>
+            <p className="text-xs text-center text-neutral-400 mt-3 font-medium">Disclosure of git metadata &amp; Springboot actuator info · Adobe · HackerOne</p>
+          </div>
+        </div>
+      </div>
     ),
-    subtitleH: "Adobe",
-    image3: "/1stReportHackerOne",
-    //image2: "",
+    badge: "Achievements",
   },
   {
-    title: "Reports in BugCrowd",
+    title: "",
     description: (
-      <ul className="list-disc ml-6">
-        <li>
-        Among the vulnerabilities I have reported to the NASA VDP, my most critical and impactful finding was 
-        an information disclosure affecting the supply chain, compromising both NASA and its associated customers.        
-        </li>
-      </ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="https://certs.ine.com/9ddf34db-9e51-4056-873f-0d80092a1099#acc.KJQ5eRzF" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
+          <h3 className="font-bold mb-4 text-center">eWPTXv3 [ INE ]</h3>
+          <div className="h-36 flex items-center justify-center">
+            <Image src={ewptxv3} alt="eWPTXv3 Certification" width={200} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
+          </div>
+        </a>
+        <a href="https://portswigger.net/web-security/e/c/8eb5174d2f3a576e" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
+          <h3 className="font-bold mb-4 text-center">BSCP [ PortSwigger ]</h3>
+          <div className="h-36 flex items-center justify-center">
+            <Image src={bscp} alt="BSCP Certification" width={144} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
+          </div>
+        </a>
+      </div>
     ),
-    subtitleB: "Nasa 🚀",
-    image5: "/reportNasa",
-    //image2: "",
+    badge: "Certifications",
   },
   {
-    title: "Platforms Web Academy",
+    title: "",
     description: (
-      <ul className="list-disc ml-6">
-        <li>
-          I have been able to solve over 356 labs on the Portswigger and Pentesterlab platform covering topics such as:
-          SSRF, SQLi, No-SQLi, Disclosure Information, LLM Attacks, ClickJacking, Server Side Template Injection, OS Command Injection, Path Traversal, File Upload, File Include,
-          Access Control, Authentication/Authorization, Web Sockets, UNIX Systems, XSS, Business Logic Vulnerabilities, Caché Web Deception, HTTP Request Smuggling, 
-          Prototype Pollution, Insecure Deserialization, Race Conditions, XXE, CORS, DOM Based Vulnerabilities, GraphQL API Attacks, HOST Header Attacks, Web Cache Poisoning, and more.
-        </li>
-      </ul>
+      <MediumPosts />
     ),
-    subtitleP: "PortSwigger",
-    image4: "/progress-portswigger", 
-    subtitle2: "PentesterLab",
-    image2: "/pentesterlab",
-  },
-  {
-    title: "My Blog in Medium :)",
-    description: (
-      <ul className="list-disc ml-6">
-        <li>
-          In my spare time, I write on my personal blog about various topics related to computer security and software,
-          from how AES hashing and Keccak states work in cryptography to how to set up dynamic routing between two LANs.
-        </li>
-        <li>
-          Passionate about learning every day, every new topic is a great opportunity to expose it to the public,
-          to teach it, to give the opportunity to someone who is in the same process as me to learn and not give up.
-        </li>
-      </ul>
-    ),
-    badge: "💡 Security Chronicles",
-    image: "",
-    blog:"",
+    badge: "Security Chronicles",
   },
 ];
