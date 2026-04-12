@@ -37,7 +37,7 @@ const dummyContent = [
     description: (
       <>
         <div className="mb-4">
-          <h3 className="font-bold">Ethical Hacker, KPMG Colombia</h3>
+          <h3 className="font-bold">Penetration Tester, KPMG Colombia</h3>
           <p className="text-sm text-neutral-400 mb-2">April 2025 – Present</p>
           <ul className="list-disc ml-6">
             <li>
@@ -65,7 +65,7 @@ const dummyContent = [
 
         <div className="mb-4">
           <h3 className="font-bold">Security Researcher - HackerOne / BugCrowd</h3>
-          <p className="text-sm text-neutral-400 mb-2">July 2024 – Present</p>
+          <p className="text-sm text-neutral-400 mb-2">June 2023 – Present</p>
           <ul className="list-disc ml-6">
             <li>
               Specialized in identifying critical vulnerabilities using PTES methodology
