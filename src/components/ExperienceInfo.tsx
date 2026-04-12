@@ -110,7 +110,7 @@ const dummyContent = [
       <div className="flex overflow-x-auto flex-nowrap gap-4 pb-4 snap-x">
         <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
           <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-35526</h3>
-          <p className="mb-2 text-sm text-neutral-300">Denial of Service via unbounded WebSocket subscriptions in Strawberry GraphQL (&#x3e;5M downloads/month on PyPI). An unauthenticated attacker can exhaust server resources by opening unlimited subscriptions without triggering any rate limit.</p>
+          <p className="mb-2 text-sm text-neutral-300">Denial of Service via unbounded WebSocket subscriptions in Strawberry GraphQL (+5M downloads/month on PyPI). An unauthenticated attacker can exhaust server resources by opening unlimited subscriptions without triggering any rate limit.</p>
           <a href="https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
         </div>
 
