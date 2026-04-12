@@ -79,7 +79,7 @@ export function Hero() {
             </span>
             <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
               <a
-                href="https://drive.google.com/file/d/1UOF6wkptUmfdHY8IIE1sNhBLKANr_8x-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1gYYhwBNEyenmZK9z1v9vcCW0KOAypXTW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
