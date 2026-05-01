@@ -4,9 +4,9 @@
 
 **Security Researcher · Ethical Hacker · Software Developer**
 
-[![Live](https://img.shields.io/badge/🌐_Live_Site-juanfelipeoz.software-22c55e?style=for-the-badge&labelColor=0a0a0a)](https://juanfelipeoz.software/)
+[![Live](https://img.shields.io/badge/🌐_Live_Site-juanfelipeoz.com-22c55e?style=for-the-badge&labelColor=0a0a0a)](https://juanfelipeoz.com/)
 [![HackerOne](https://img.shields.io/badge/HackerOne-jf0x0r-e84848?style=for-the-badge&logo=hackerone&logoColor=white&labelColor=0a0a0a)](https://hackerone.com/jf0x0r)
-[![BugCrowd](https://img.shields.io/badge/BugCrowd-jf0x0r-f26522?style=for-the-badge&logo=bugcrowd&logoColor=white&labelColor=0a0a0a)](https://bugcrowd.com/jf0x0r)
+[![BugCrowd](https://img.shields.io/badge/BugCrowd-jf0x0r-f26522?style=for-the-badge&logo=bugcrowd&logoColor=white&labelColor=0a0a0a)](https://bugcrowd.com/h/jf0x0r)
 [![Medium](https://img.shields.io/badge/Medium-@juanfelipeoz.rar-white?style=for-the-badge&logo=medium&logoColor=black&labelColor=0a0a0a)](https://medium.com/@juanfelipeoz.rar)
 
 ---
@@ -58,40 +58,6 @@ Personal portfolio of **Juan Felipe Osorio (jf0x0r)**, software developer and se
 
 ---
 
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Other scripts
-
-```bash
-npm run build      # Production build
-npm run start      # Start production server
-npm run lint       # ESLint check
-npm run analyze    # Bundle analysis (opens visual bundle map)
-```
-
----
-
-## Performance Optimizations
-
-- **Next.js `<Image>`** — automatic AVIF/WebP conversion + lazy loading on all images
-- **`next/font`** with `display: swap` — eliminates layout shift from font loading
-- **Dynamic imports** — below-fold components are code-split and loaded on demand
-- **Edge-cached RSS route** — `/api/medium` caches the Medium feed for 1h at Vercel's edge (`s-maxage=3600, stale-while-revalidate=86400`)
-- **Security headers** — `X-Content-Type-Options`, `X-Frame-Options`, `X-XSS-Protection` on all routes
-- **Static asset caching** — `Cache-Control: public, max-age=31536000, immutable` on all images
-
----
-
 ## Project Structure
 
 ```
@@ -126,16 +92,8 @@ src/
 
 ---
 
-## Deployment
-
-Deployed on **Vercel** with automatic CI/CD on push to `main`.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JFOZ1010/Portfolio-JF0x0r)
-
----
-
 <div align="center">
 
-Made with focus by **jf0x0r** · [juanfelipeoz.vercel.app](https://juanfelipeoz.vercel.app/)
+Made with focus by **jf0x0r** · [juanfelipeoz.com](https://juanfelipeoz.com)
 
 </div>
