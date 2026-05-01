@@ -37,8 +37,8 @@ const dummyContent = [
     description: (
       <>
         <div className="mb-4">
-          <h3 className="font-bold">Penetration Tester, KPMG Colombia</h3>
-          <p className="text-sm text-neutral-400 mb-2">April 2025 – Present</p>
+          <h3 className="font-bold">Offensive Security Consultant, KPMG</h3>
+          <p className="text-sm text-neutral-400 mb-2">April 2025 - Present (Bogotá, Colombia)</p>
           <ul className="list-disc ml-6">
             <li>
               Web and mobile application penetration testing for enterprise clients across
@@ -64,8 +64,8 @@ const dummyContent = [
         </div>
 
         <div className="mb-4">
-          <h3 className="font-bold">Security Researcher - HackerOne / BugCrowd</h3>
-          <p className="text-sm text-neutral-400 mb-2">June 2023 – Present</p>
+          <h3 className="font-bold">Security Researcher, HackerOne - BugCrowd</h3>
+          <p className="text-sm text-neutral-400 mb-2">June 2023 – Present (Remote)</p>
           <ul className="list-disc ml-6">
             <li>
               Specialized in identifying critical vulnerabilities using PTES methodology
@@ -83,7 +83,7 @@ const dummyContent = [
         </div>
 
         <div>
-          <h3 className="font-bold">Software Analyst / Ethical Hacker Intern - Siesa</h3>
+          <h3 className="font-bold">Ethical Hacker - Siesa</h3>
           <p className="text-sm text-neutral-400 mb-2">January 2024 – June 2024</p>
           <ul className="list-disc ml-6">
             <li>
@@ -151,7 +151,7 @@ const dummyContent = [
         </div>
       </div>
     ),
-    badge: "CVEs / Vulnerability Research",
+    badge: "CVEs • Vulnerability Research",
   },
   {
     title: "",

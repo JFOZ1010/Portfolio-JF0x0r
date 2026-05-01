@@ -21,8 +21,8 @@ export function HeroScrollDemo() {
   return (
     <div className="w-full bg-black py-24 flex flex-col items-center justify-center relative z-20">
       <div className="max-w-5xl mx-auto px-8 w-full">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center md:text-left">Stack / Tools</h2>
-        
+        <h2 className="text-3xl font-bold text-white mb-12 text-center md:text-left">Stack • Tools</h2>
+
         <div className="flex flex-col gap-10">
           <div>
             <h3 className="text-xl font-semibold text-neutral-300 mb-6">Offensive Security</h3>

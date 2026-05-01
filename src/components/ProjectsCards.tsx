@@ -2,7 +2,7 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-const words = `I specialize in Web Pentesting, driven by curiosity and lateral thinking to find innovative solutions to complex problems. I apply Shoshin every day in my life product of it, my projects: you can explore my GitHub profile for more information :)`;
+const words = `I specialize in Web and Mobile Pentesting, driven by curiosity and lateral thinking to find innovative solutions to complex problems. I apply Shoshin every day in my life product of it, my projects: you can explore my GitHub profile for more information :)`;
 
 export function ProjectsCards() {
   return (
