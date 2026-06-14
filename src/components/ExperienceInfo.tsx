@@ -9,6 +9,8 @@ const lorNasa1 = '/LOR-Nasa-1.png';
 const lorNasa2 = '/LOR-Nasa-2.jpg';
 const ewptxv3 = '/ewptxv3-badge.png';
 const bscp = '/bscp-badge.png';
+const ejpt = '/ejpt-certification.png';
+const acp = '/acp-certification.png';
 const hackerOne = '/1stReportHackerOne.png';
 
 export function ExperienceInfo() {
@@ -37,8 +39,31 @@ const dummyContent = [
     description: (
       <>
         <div className="mb-4">
+          <h3 className="font-bold">Offensive Security Engineer, NTT Data</h3>
+          <p className="text-sm text-neutral-400 mb-2">June 2026 - Present (Remote, Colombia)</p>
+          <ul className="list-disc ml-6">
+            <li>
+              Web, API, and mobile application penetration testing for large enterprise
+              clients across Colombia and LATAM, spanning banking, retail, and critical infrastructure sectors.
+            </li>
+            <li>
+              Advanced exploitation of web vulnerabilities and business logic flaws on
+              Android and iOS applications, REST and GraphQL APIs under PTEST methodology and NIST standards.
+            </li>
+            <li>
+              Embedded offensive security within client DevSecOps pipelines, performing
+              targeted assessments on new modules and components at each CI/CD cycle before they reach production.
+            </li>
+            <li>
+              Security awareness sessions and technical talks bridging the gap between
+              offensive findings and secure development practices within client organizations.
+            </li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
           <h3 className="font-bold">Offensive Security Consultant, KPMG</h3>
-          <p className="text-sm text-neutral-400 mb-2">April 2025 - Present (Bogotá, Colombia)</p>
+          <p className="text-sm text-neutral-400 mb-2">April 2025 - May 2025 (Bogotá, Colombia)</p>
           <ul className="list-disc ml-6">
             <li>
               Web and mobile application penetration testing for enterprise clients across
@@ -204,16 +229,28 @@ const dummyContent = [
     title: "",
     description: (
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <a href="https://certs.ine.com/9ddf34db-9e51-4056-873f-0d80092a1099#acc.KJQ5eRzF" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
-          <h3 className="font-bold mb-4 text-center">eWPTXv3 [ INE ]</h3>
-          <div className="h-36 flex items-center justify-center">
-            <Image src={ewptxv3} alt="eWPTXv3 Certification" width={200} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
-          </div>
-        </a>
         <a href="https://portswigger.net/web-security/e/c/8eb5174d2f3a576e" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
           <h3 className="font-bold mb-4 text-center">BSCP [ PortSwigger ]</h3>
           <div className="h-36 flex items-center justify-center">
             <Image src={bscp} alt="BSCP Certification" width={144} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
+          </div>
+        </a>
+        <a href="https://certs.ine.com/9ddf34db-9e51-4056-873f-0d80092a1099#acc.KJQ5eRzF" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
+          <h3 className="font-bold mb-4 text-center">eWPTX [ INE ]</h3>
+          <div className="h-36 flex items-center justify-center">
+            <Image src={ewptxv3} alt="eWPTXv3 Certification" width={200} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
+          </div>
+        </a>
+        <a href="https://certs.ine.com/f2ad21a7-8dd0-4fe8-8cf1-32a0c9fb1df1#acc.M93n6Nxb" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
+          <h3 className="font-bold mb-4 text-center">eJPT [ INE ]</h3>
+          <div className="h-36 flex items-center justify-center">
+            <Image src={ejpt} alt="EJPT Certification" width={144} height={144} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
+          </div>
+        </a>
+        <a href="https://www.credly.com/badges/7634801f-cd54-4d61-b15c-fbeaed199b2b/linked_in_profile" target="_blank" rel="noopener noreferrer" className="block p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-colors duration-300">
+          <h3 className="font-bold mb-4 text-center">ACP [ APISec University ]</h3>
+          <div className="flex items-center justify-center">
+            <Image src={acp} alt="ACP Certification" width={220} height={220} className="max-h-full max-w-full object-contain mx-auto transition-transform hover:scale-105 duration-300" loading="lazy" />
           </div>
         </a>
       </div>

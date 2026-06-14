@@ -69,7 +69,9 @@ export function Hero() {
           {typedGreeting} <br /> I&apos;m Juan Felipe Oz.
         </h1>
         <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
-          Software developer and security researcher from Colombia. Focused on web application penetration testing, vulnerability research, and backend development. CVE author and NASA-acknowledged independent researcher. Committed to building and breaking things the right way.
+          Offensive Security Engineer specialized in web application, API, and mobile penetration testing.
+          Independent Vulnerability Researcher with disclosed CVEs in open source software, NASA recognition,
+          and Burp Suite Champion. I build security tools, break enterprise systems, and publish what i find.
         </p>
 
         <div className="flex justify-center mt-4">
