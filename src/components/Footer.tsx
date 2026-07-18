@@ -3,7 +3,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-//import { FaGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import { PiMediumLogoFill } from "react-icons/pi";
 export function Footer() {
   return (
@@ -14,29 +14,24 @@ export function Footer() {
         <p className="text-3xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
           Connect with me at
         </p>
-        {/*
-        Add some icons of linkedin twitter and github here using react icons
-         */}
 
         <div className="flex space-x-4 text-4xl relative z-20">
-        <a href="https://medium.com/@juanfelipeoz.rar" target="_blank">
+          <a href="https://medium.com/@juanfelipeoz.rar" target="_blank" rel="noopener noreferrer">
             <PiMediumLogoFill  className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
-          <a href="https://www.linkedin.com/in/juanfelipeoz" target="_blank">
+          <a href="https://www.linkedin.com/in/juanfelipeoz" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
-          <a href="https://x.com/PwnedRar_" target="_blank">
+          <a href="https://github.com/JFOZ1010" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-neutral-500 hover:text-white transition-colors duration-300" />
+          </a>
+          <a href="https://x.com/PwnedRar_" target="_blank" rel="noopener noreferrer">
             <FaXTwitter className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
-          <a href="mailto:juanfelipeoz.rar@gmail.com" target="_blank">
+          <a href="mailto:juanfelipeoz.rar@gmail.com" target="_blank" rel="noopener noreferrer">
             <MdEmail className="text-neutral-500 hover:text-white transition-colors duration-300" />
           </a>
         </div>
-{/*
-        <p className="text-sm text-center text-neutral-500 relative z-20 mt-5">
-          Designed by Mukund Solanki, all rights reserved!
-        </p>
- */}
       </div>
     </div>
   );

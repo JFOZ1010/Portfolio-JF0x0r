@@ -2,7 +2,7 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-const words = `I specialize in Web Pentesting, driven by curiosity and lateral thinking to find innovative solutions to complex problems. I apply Shoshin every day in my life product of it, my projects: you can explore my GitHub profile for more information :)`;
+const words = `I specialize in Web and Mobile Pentesting, driven by curiosity and lateral thinking to find innovative solutions to complex problems. I apply Shoshin every day in my life product of it, my projects: you can explore my GitHub profile for more information :)`;
 
 export function ProjectsCards() {
   return (
@@ -32,16 +32,16 @@ export function ProjectsCards() {
 }
 export const projects = [
   {
-    title: "TorIPGuard",
+    title: "RepShot",
     description:
-      "A REST API for managing malicious IPs in TOR networks, featuring IP retrieval, exclusion, filtering, and detailed logging with user and admin permissions.",
-    link: "https://github.com/JFOZ1010/TorIPGuard",
+      "Burp Suite extension that turns Repeater findings into annotated, report-ready evidence cards auto-filled business impact, red-box highlighting, and HD PNG export. Built as a PortSwigger Burp Champion. +97 stars on GitHub.",
+    link: "https://github.com/JFOZ1010/repshot",
   },
   {
-    title: "CVEHunter",
+    title: "H1Notifier",
     description:
-      "A hacking tool designed to collect all NVD CVEs from 2018 onwards, storing them for integration with OWASP ZAP for web application analysis.",
-    link: "https://github.com/JFOZ1010/CVEHunter",
+      "Automated bot that monitors new programs launched on HackerOne and sends Telegram notifications whenever a new program is detected. Fully automated via GitHub Actions, runs every 3 hours.",
+    link: "https://github.com/JFOZ1010/H1Notifier",
   },
   {
     title: "CryptoHack",
