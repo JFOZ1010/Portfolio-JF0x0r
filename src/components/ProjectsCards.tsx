@@ -32,10 +32,10 @@ export function ProjectsCards() {
 }
 export const projects = [
   {
-    title: "TorIPGuard",
+    title: "RepShot",
     description:
-      "A REST API for managing malicious IPs in TOR networks, featuring IP retrieval, exclusion, filtering, and detailed logging with user and admin permissions.",
-    link: "https://github.com/JFOZ1010/TorIPGuard",
+      "A Burp Suite extension that turns Repeater findings into annotated, report-ready evidence cards auto-filled business impact, red-box highlighting, and HD PNG export. Built as a PortSwigger Burp Champion. +97 stars on GitHub.",
+    link: "https://github.com/JFOZ1010/repshot",
   },
   {
     title: "H1Notifier",

@@ -34,150 +34,102 @@ export function ExperienceInfo() {
 }
 
 const dummyContent = [
-  {
-    title: "",
-    description: (
-      <>
-        <div className="mb-4">
-          <h3 className="font-bold">Offensive Security Engineer, NTT Data</h3>
-          <p className="text-sm text-neutral-400 mb-2">June 2026 - Present (Remote, Colombia)</p>
-          <ul className="list-disc ml-6">
-            <li>
-              Web, API, and mobile application penetration testing for large enterprise
-              clients across Colombia and LATAM, spanning banking, retail, and critical infrastructure sectors.
-            </li>
-            <li>
-              Advanced exploitation of web vulnerabilities and business logic flaws on
-              Android and iOS applications, REST and GraphQL APIs under PTEST methodology and NIST standards.
-            </li>
-            <li>
-              Embedded offensive security within client DevSecOps pipelines, performing
-              targeted assessments on new modules and components at each CI/CD cycle before they reach production.
-            </li>
-            <li>
-              Security awareness sessions and technical talks bridging the gap between
-              offensive findings and secure development practices within client organizations.
-            </li>
-          </ul>
-        </div>
-
-        <div className="mb-4">
-          <h3 className="font-bold">Offensive Security Consultant, KPMG</h3>
-          <p className="text-sm text-neutral-400 mb-2">April 2025 - May 2025 (Bogotá, Colombia)</p>
-          <ul className="list-disc ml-6">
-            <li>
-              Web and mobile application penetration testing for enterprise clients across
-              financial, healthcare, and government sectors, including major energy corporations.
-            </li>
-            <li>
-              Manual and automated vulnerability assessment: SQLi, XSS, IDOR, SSRF,
-              Business Logic flaws, authentication bypasses, and API security testing.
-            </li>
-            <li>
-              Exploitation of complex vulnerability chains in regulated environments
-              under OWASP and PTES methodologies.
-            </li>
-            <li>
-              Client-facing reporting: translating critical technical findings into
-              executive-level risk impact, with actionable remediation roadmaps.
-            </li>
-            <li>
-              Attack surface analysis and red team collaboration on complex
-              multi-layered infrastructures.
-            </li>
-          </ul>
-        </div>
-
-        <div className="mb-4">
-          <h3 className="font-bold">Security Researcher, HackerOne - BugCrowd</h3>
-          <p className="text-sm text-neutral-400 mb-2">June 2023 – Present (Remote)</p>
-          <ul className="list-disc ml-6">
-            <li>
-              Specialized in identifying critical vulnerabilities using PTES methodology
-              and lateral thinking to solve complex problems with technical creativity.
-            </li>
-            <li>
-              Reported Open Redirect, Subdomain Takeover, and Information Disclosure
-              vulnerabilities in Adobe, NASA VDP, and private programs.
-            </li>
-            <li>
-              Specialized in asset enumeration, web exploitation, and high-impact findings
-              across public and private bug bounty programs.
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-bold">Ethical Hacker - Siesa</h3>
-          <p className="text-sm text-neutral-400 mb-2">January 2024 – June 2024</p>
-          <ul className="list-disc ml-6">
-            <li>
-              Analyzed enterprise ERP and CRM software solutions across multiple versions
-              prior to production deployment.
-            </li>
-            <li>
-              Conducted penetration testing on two internal applications, identifying
-              SQL Boolean Injection and Reflected XSS vulnerabilities with remediation proposals.
-            </li>
-            <li>
-              Contributed to software quality and security analysis, improving operational
-              efficiency and data protection standards.
-            </li>
-          </ul>
-        </div>
-      </>
-    ),
-    badge: "Experience",
-  },
-  {
-    title: "",
-    description: (
-      <div className="flex overflow-x-auto flex-nowrap gap-4 pb-4 snap-x">
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-35526</h3>
-          <p className="mb-2 text-sm text-neutral-300">Denial of Service via unbounded WebSocket subscriptions in Strawberry GraphQL (+5M downloads/month on PyPI). An unauthenticated attacker can exhaust server resources by opening unlimited subscriptions without triggering any rate limit.</p>
-          <a href="https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34406</h3>
-          <p className="mb-2 text-sm text-neutral-300">Privilege Escalation via mass assignment of is_superuser in APTRS&apos;s user edit endpoint. A low-privileged authenticated user can escalate to superuser by sending a crafted request that modifies protected fields.</p>
-          <a href="https://github.com/APTRS/APTRS/security/advisories/GHSA-gv25-wp4h-9c35" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34381</h3>
-          <p className="mb-2 text-sm text-neutral-300">Unauthenticated access to role-restricted documents in Admidio via a neutralized .htaccess file. File access controls were bypassable without any authentication.</p>
-          <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-7fh7-8xqm-3g88" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34382</h3>
-          <p className="mb-2 text-sm text-neutral-300">Missing CSRF protection on custom list deletion in Admidio&apos;s mylist_function.php. Allows an attacker to trick authenticated users into deleting arbitrary lists via a forged request.</p>
-          <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-g3mx-8jm6-rc85" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50578</h3>
-          <p className="mb-2 text-sm text-neutral-300">Host Header Injection + Open Redirect in the official Heimdall Docker image (LinuxServer.io). Manipulation of the Host header allows arbitrary redirection of authenticated users.</p>
-          <a href="https://www.cve.org/CVERecord?id=CVE-2025-50578" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
-          <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50579</h3>
-          <p className="mb-2 text-sm text-neutral-300">Authentication bypass vulnerability in Nginx Proxy Manager v2.12.3. Reported via MITRE/NVD.</p>
-          <a href="https://nvd.nist.gov/vuln/detail/cve-2025-50579" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
-        </div>
-
-        <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/40 flex flex-col items-center justify-center snap-start min-h-[160px]">
-          <span className="text-3xl text-green-400 animate-pulse mb-3 mt-2">∞</span>
-          <p className="text-neutral-400 text-sm text-center">More research in progress.</p>
-          <p className="text-neutral-600 text-xs mt-1 text-center">Some findings are under coordinated disclosure.</p>
-        </div>
+{
+  title: "",
+  description: (
+    <>
+      <div className="mb-4">
+        <h3 className="font-bold">Offensive Security Engineer, NTT Data</h3>
+        <p className="text-sm text-neutral-400 mb-2">June 2026 - Present (Remote, Colombia)</p>
+        <ul className="list-disc ml-6">
+          <li>Adversarial testing across web, API, and mobile surfaces for enterprise clients throughout LATAM.</li>
+          <li>Embedded in CI/CD - assessing what ships before it becomes someone else's incident.</li>
+        </ul>
       </div>
-    ),
-    badge: "CVEs • Vulnerability Research",
-  },
+
+      <div className="mb-4">
+        <h3 className="font-bold">Offensive Security Consultant, KPMG</h3>
+        <p className="text-sm text-neutral-400 mb-2">April 2025 - May 2026 (Bogotá, Colombia)</p>
+        <ul className="list-disc ml-6">
+          <li>Penetration testing across regulated, high-stakes environments - finance, healthcare, energy.</li>
+          <li>Chained low-severity findings into critical impact, then translated it into risk executives act on.</li>
+        </ul>
+      </div>
+
+      <div className="mb-4">
+        <h3 className="font-bold">Security Researcher, HackerOne / Bugcrowd</h3>
+        <p className="text-sm text-neutral-400 mb-2">June 2023 – June 2026 (Remote)</p>
+        <ul className="list-disc ml-6">
+          <li>Independent research acknowledged by Adobe, NASA VDP, and private programs.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="font-bold">Ethical Hacker - Siesa</h3>
+        <p className="text-sm text-neutral-400 mb-2">January 2024 – June 2024</p>
+        <ul className="list-disc ml-6">
+          <li>Security assessments on ERP and CRM platforms ahead of production release.</li>
+        </ul>
+      </div>
+    </>
+  ),
+  badge: "Experience",
+},
+{
+  title: "",
+  description: (
+    <div className="flex overflow-x-auto flex-nowrap gap-4 pb-4 snap-x">
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-14871</h3>
+        <p className="mb-2 text-sm text-neutral-300">BOLA/IDOR in osTicket v1.18.3 and v1.17.7. Broken authorization let any authenticated user read tickets that weren&apos;t theirs to read.</p>
+        <a href="https://fluidattacks.com/es/advisories/kyokai" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-35526</h3>
+        <p className="mb-2 text-sm text-neutral-300">Denial of Service via unbounded WebSocket subscriptions in Strawberry GraphQL (+5M downloads/month on PyPI). An unauthenticated attacker can exhaust server resources by opening unlimited subscriptions without triggering any rate limit.</p>
+        <a href="https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34406</h3>
+        <p className="mb-2 text-sm text-neutral-300">Privilege Escalation via mass assignment of is_superuser in APTRS&apos;s user edit endpoint. A low-privileged authenticated user can escalate to superuser by sending a crafted request that modifies protected fields.</p>
+        <a href="https://github.com/APTRS/APTRS/security/advisories/GHSA-gv25-wp4h-9c35" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34381</h3>
+        <p className="mb-2 text-sm text-neutral-300">Unauthenticated access to role-restricted documents in Admidio via a neutralized .htaccess file. File access controls were bypassable without any authentication.</p>
+        <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-7fh7-8xqm-3g88" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2026-34382</h3>
+        <p className="mb-2 text-sm text-neutral-300">Missing CSRF protection on custom list deletion in Admidio&apos;s mylist_function.php. Allows an attacker to trick authenticated users into deleting arbitrary lists via a forged request.</p>
+        <a href="https://github.com/Admidio/admidio/security/advisories/GHSA-g3mx-8jm6-rc85" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50578</h3>
+        <p className="mb-2 text-sm text-neutral-300">Host Header Injection + Open Redirect in the official Heimdall Docker image (LinuxServer.io). Manipulation of the Host header allows arbitrary redirection of authenticated users.</p>
+        <a href="https://www.cve.org/CVERecord?id=CVE-2025-50578" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/50 hover:border-green-600/50 transition-all duration-300 snap-start">
+        <h3 className="font-mono text-green-500 font-bold mb-2">CVE-2025-50579</h3>
+        <p className="mb-2 text-sm text-neutral-300">Authentication bypass vulnerability in Nginx Proxy Manager v2.12.3. Reported via MITRE/NVD.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/cve-2025-50579" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline font-medium text-sm">advisory →</a>
+      </div>
+
+      <div className="w-72 shrink-0 p-4 rounded-lg border border-neutral-800 bg-neutral-900/40 flex flex-col items-center justify-center snap-start min-h-[160px]">
+        <span className="text-3xl text-green-400 animate-pulse mb-3 mt-2">∞</span>
+        <p className="text-neutral-400 text-sm text-center">More research in progress.</p>
+        <p className="text-neutral-600 text-xs mt-1 text-center">Some findings are under coordinated disclosure.</p>
+      </div>
+    </div>
+  ),
+  badge: "CVEs • Vulnerability Research",
+},
   {
     title: "",
     description: (
