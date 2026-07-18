@@ -43,7 +43,7 @@ const dummyContent = [
         <p className="text-sm text-neutral-400 mb-2">June 2026 - Present (Remote, Colombia)</p>
         <ul className="list-disc ml-6">
           <li>Adversarial testing across web, API, and mobile surfaces for enterprise clients throughout LATAM.</li>
-          <li>Embedded in CI/CD - assessing what ships before it becomes someone else's incident.</li>
+          <li>Embedded in CI/CD - assessing what ships before it becomes someone else&apos;s incident.</li>
         </ul>
       </div>
 
