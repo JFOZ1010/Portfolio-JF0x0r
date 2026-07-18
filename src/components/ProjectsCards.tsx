@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "RepShot",
     description:
-      "A Burp Suite extension that turns Repeater findings into annotated, report-ready evidence cards auto-filled business impact, red-box highlighting, and HD PNG export. Built as a PortSwigger Burp Champion. +97 stars on GitHub.",
+      "Burp Suite extension that turns Repeater findings into annotated, report-ready evidence cards auto-filled business impact, red-box highlighting, and HD PNG export. Built as a PortSwigger Burp Champion. +97 stars on GitHub.",
     link: "https://github.com/JFOZ1010/repshot",
   },
   {
